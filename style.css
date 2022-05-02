@@ -50,7 +50,7 @@ header nav a:hover{
 /*Filme Principal*/
 .filme-principal{
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url("../img/iron_capa2.jpg");
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url("img/iron_capa2.jpg");
 
     height: 400px;
     background-size: cover;/*Cover = Cobrir toda a caixa*/
