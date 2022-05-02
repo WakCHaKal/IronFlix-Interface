@@ -1,0 +1,117 @@
+:root{
+    --vermelho: #e50914;
+    --preto:#141414;
+
+}
+
+*{ /* Reset CSS. Usado p/ resetar as config "de fábrica"*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*mantém os elementos no tamanho
+    definido dentro da caixa*/
+}
+
+/*Elementos Básicos*/
+
+body{ /*Todo elemento herda característica do pai*/
+    background-color: var(--preto);/*Pra declarar uma variável: var(--" ")*/
+    font-family: 'Arial', Times, serif; /*Fonte Padrão*/
+    color: white
+
+}
+
+
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: "Arial Black";
+    font-size: 40px;
+    }
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color:#ffff
+
+}
+
+/*Filme Principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url("/img/iron_capa2.jpg");
+
+    height: 400px;
+    background-size: cover;/*Cover = Cobrir toda a caixa*/
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*Sempre segue o flex-direction*/
+    align-items: flex-start; /*sempre estará oposto do justify-content*/
+
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px; /*Margem entre o texto e o botão*/
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.filme-principal .botao{
+    background-color:rgba(0,0,0,.50) ;
+    border: none;/*Pra tirar a borda*/
+    color: white;/*Cor do texto*/
+
+    padding:15px 30px ;/*Cuida do espaço interno*/
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer; /*muda o cursor do mouse quando passar em cima do botão*/
+    transition: .3s ease all ; /*Suaviza o efeito da ação do cursor*/
+}
+
+.botao:hover{ /*Inverter as cores quando o cursor passar */
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 5px;
+    /*Site utilizado icones https://fontawesome.com/*/
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{ /*Padronizar tam das imgs*/
+    height: 100%; /*Tam natural*/
+    width: 100%;
+    display: block;
+
+
+}
+
+.carrosel-filmes{
+    margin-top: 5px; ;
+}
